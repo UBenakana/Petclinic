@@ -38,7 +38,7 @@ stages:
           # Put one key=value per line, example:
           # sonar.exclusions=**/*.bin
           sonar.java.binaries=.
-          sonar.branch.name=$(Build.SourceBranchName)
+          sonar.branch.autoconfig.disabled=true
 
      - task: SonarQubePublish@6
        inputs:
